@@ -64,3 +64,7 @@ This portfolio demonstrates practical identity security knowledge, technical pro
  My experience includes enterprise IT administration, employee access provisioning, account permissions management, Active Directory administration, and Duo Security administration.
 
  This portfolio expands on that foundation through hands-on technical projects focused on identity security, automation, and access governance.
+
+Disclaimer
+
+All project demonstrations are fictional sample data and personal lab environments. No proprietary company information, credentials, or confidential data are included.
