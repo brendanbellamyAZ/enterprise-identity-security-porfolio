@@ -59,4 +59,8 @@ Purpose
 
 This portfolio demonstrates practical identity security knowledge, technical problem-solving, automation concepts, and enterprise IT administration capabilities.
  
- 
+ Professional Background
+
+ My experience includes enterprise IT administration, employee access provisioning, account permissions management, Active Directory administration, and Duo Security administration.
+
+ This portfolio expands on that foundation through hands-on technical projects focused on identity security, automation, and access governance.
