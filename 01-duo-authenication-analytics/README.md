@@ -150,4 +150,4 @@ Author
 
 Enterprise Identity Security Portfolio
 
-Demonstrating practical IAM, identity administration, security reporting, and automation skills.
+Demonstrating practical IAM, identity administration, security reporting, and automation skills
