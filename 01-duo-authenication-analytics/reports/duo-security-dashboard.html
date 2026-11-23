@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Duo Security Analytics Dashboard</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f5f8;
+    color: #222;
+    margin: 30px;
+}
+h1 { color: #17365d; }
+h2 {
+    color: #17365d;
+    border-bottom: 2px solid #d5dce5;
+    padding-bottom: 8px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+.card {
+    background: white;
+    padding: 18px;
+    border-radius: 8px;
+    min-width: 145px;
+    box-shadow: 0 2px 5px #ccc;
+}
+.metric {
+    font-size: 28px;
+    font-weight: bold;
+    color: #176b87;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+    margin-bottom: 25px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 9px;
+    text-align: left;
+}
+th {
+    background: #17365d;
+    color: white;
+}
+.note {
+    background: #fff3cd;
+    padding: 12px;
+    border-radius: 6px;
+}
+</style>
+</head>
+<body>
+ 
+<h1>Duo Security Analytics Dashboard</h1>
+<p>Enterprise Identity Security Portfolio | Synthetic Training Data</p>
+ 
+<div class="note">
+<strong>Data notice:</strong> This dashboard uses fictional sample data.
+It does not connect to a live Duo environment.
+</div>
+ 
+<h2>Security Overview</h2>
+<div class="cards">
+<div class="card">Total Authentication Events<div class="metric">6</div></div>
+<div class="card">Successful Events<div class="metric">4</div></div>
+<div class="card">Denied Events<div class="metric">2</div></div>
+<div class="card">Users Requiring Review<div class="metric">2</div></div>
+<div class="card">Active Devices<div class="metric">4</div></div>
+</div>
+ 
+<h2>Authentication Activity</h2>
+<p>Repeated denied attempts: 1 user(s)</p>
+<table> <colgroup><col/><col/></colgroup> <tr><th>Username</th><th>DeniedAttempts</th></tr> <tr><td>jordan.lee</td><td>2</td></tr> </table>
+ 
+<h3>Authentication Records</h3>
+<table> <colgroup><col/><col/><col/><col/><col/><col/></colgroup> <tr><th>Username</th><th>Result</th><th>Factor</th><th>Application</th><th>Device</th><th>Timestamp</th></tr> <tr><td>alex.morgan</td><td>SUCCESS</td><td>Duo Push</td><td>Microsoft 365</td><td>iPhone</td><td>2026-11-18 08:15:00</td></tr> <tr><td>jordan.lee</td><td>DENIED</td><td>Duo Push</td><td>VPN</td><td>Android</td><td>2026-11-18 08:30:00</td></tr> <tr><td>taylor.smith</td><td>SUCCESS</td><td>Passcode</td><td>Microsoft 365</td><td>iPhone</td><td>2026-11-18 09:00:00</td></tr> <tr><td>jordan.lee</td><td>DENIED</td><td>Duo Push</td><td>VPN</td><td>Android</td><td>2026-11-18 09:05:00</td></tr> <tr><td>alex.morgan</td><td>SUCCESS</td><td>Duo Push</td><td>VPN</td><td>iPhone</td><td>2026-11-18 09:30:00</td></tr> <tr><td>casey.brown</td><td>SUCCESS</td><td>Duo Push</td><td>Microsoft 365</td><td>Android</td><td>2026-11-18 10:00:00</td></tr> </table>
+ 
+<h2>User Account Review</h2>
+<p>Active: 4 | Disabled: 1 | Not Enrolled: 1</p>
+<table> <colgroup><col/><col/><col/><col/></colgroup> <tr><th>Username</th><th>DisplayName</th><th>Status</th><th>Enrollment</th></tr> <tr><td>casey.brown</td><td>Casey Brown</td><td>Active</td><td>Not Enrolled</td></tr> <tr><td>morgan.jones</td><td>Morgan Jones</td><td>Disabled</td><td>Enrolled</td></tr> </table>
+ 
+<h2>Device Inventory</h2>
+<p>iOS devices: 2 | Android devices: 2</p>
+<table> <colgroup><col/><col/><col/><col/><col/></colgroup> <tr><th>Username</th><th>DeviceType</th><th>Platform</th><th>DeviceName</th><th>Status</th></tr> <tr><td>alex.morgan</td><td>Smartphone</td><td>iOS</td><td>iPhone</td><td>Active</td></tr> <tr><td>jordan.lee</td><td>Smartphone</td><td>Android</td><td>Samsung Galaxy</td><td>Active</td></tr> <tr><td>taylor.smith</td><td>Smartphone</td><td>iOS</td><td>iPhone</td><td>Active</td></tr> <tr><td>casey.brown</td><td>Smartphone</td><td>Android</td><td>Google Pixel</td><td>Active</td></tr> </table>
+ 
+<h3>Users Without Registered Devices</h3>
+<table> <colgroup><col/><col/><col/></colgroup> <tr><th>Username</th><th>DisplayName</th><th>Status</th></tr> <tr><td>morgan.jones</td><td>Morgan Jones</td><td>Disabled</td></tr> </table>
+ 
+<h2>Application Activity</h2>
+<table> <colgroup><col/><col/></colgroup> <tr><th>Application</th><th>AuthenticationEvents</th></tr> <tr><td>Microsoft 365</td><td>3</td></tr> <tr><td>VPN</td><td>3</td></tr> </table>
+ 
+<p>Generated: 2026-11-19 08:12:04</p>
+</body>
+</html>
